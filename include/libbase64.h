@@ -30,7 +30,7 @@ struct base64_state {
  * to *out without trailing zero. Output length in bytes is written to *outlen.
  * The buffer in `out` has been allocated by the caller and is at least 4/3 the
  * size of the input. See above for `flags`; set to 0 for default operation: */
-void base64_encode
+void spotx_base64_encode
 	( const char		*src
 	, size_t		 srclen
 	, char			*out
@@ -72,7 +72,7 @@ void base64_stream_encode_final
  * to *out without trailing zero. Output length in bytes is written to *outlen.
  * The buffer in `out` has been allocated by the caller and is at least 3/4 the
  * size of the input. See above for `flags`, set to 0 for default operation: */
-int base64_decode
+int spotx_base64_decode
 	( const char		*src
 	, size_t		 srclen
 	, char			*out

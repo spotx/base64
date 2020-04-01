@@ -132,7 +132,7 @@ base64_stream_decode
 #endif
 
 void
-base64_encode
+spotx_base64_encode
 	( const char	*src
 	, size_t	 srclen
 	, char		*out
@@ -165,7 +165,7 @@ base64_encode
 }
 
 int
-base64_decode
+spotx_base64_decode
 	( const char	*src
 	, size_t	 srclen
 	, char		*out
